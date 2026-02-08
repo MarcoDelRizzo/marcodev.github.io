@@ -53,7 +53,7 @@ if (!customElements.get(componentName)) {
             while(this.basePath.endsWith('/')) {
                 this.basePath = this.basePath.slice(0, -1);
             }
-            script.src = this.getAttribute('script-src') || `${this.basePath}/assets/index-e97f3411.js`;
+            script.src = this.getAttribute('script-src') || `${this.basePath}/assets/index-7535c112.js`;
             this.shadowRoot.appendChild(script);
 
             this.needleEngine = document.createElement('needle-engine');
@@ -79,7 +79,7 @@ if (!customElements.get(componentName)) {
         updateAttributes() {
             console.debug("NeedleApp updating attributes");
             
-            const src = this.getAttribute('src') || `${this.basePath}/assets/First Person Controller - Multiplayer.glb`;
+            const src = this.getAttribute('src') || `${this.basePath}/assets/Worldspace UI.glb`;
             if(src) this.needleEngine.setAttribute("src", src);
             else this.needleEngine.removeAttribute("src");
 
